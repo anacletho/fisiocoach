@@ -133,12 +133,15 @@ a:visited {
 /*--- hero section ---*/
 
 .hero {
+    padding-left: 3%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content:center;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 50px;
-    background-image: url("images/location.png");
+    flex-wrap: wrap;
+    gap: 60px; 
+    background-image: url("../images/lino1.jpg");
+    background-size: cover;
     background-color: #568acf;
     height: 800px;
     width: 100%;
@@ -148,12 +151,13 @@ a:visited {
 .hero-box {
     color: white;
     border: 4px solid white;
-
-    /* margin: 300px 10% 100px 40%; */
+    width: 650px;
+    /* margin-left: 3%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    
     
 }
 
