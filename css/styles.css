@@ -36,6 +36,7 @@ a:visited {
 
 .contact-icon {
     height: 30px;
+    margin-left: 100px;
 }
 
 /*--- navbar ---*/
@@ -131,11 +132,11 @@ a:visited {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 60px; 
-    background-image: url("../images/lino1.jpg");
+    background-image: url("../images/lino1b.jpg");
     background-size: cover;
     background-color: #568acf;
     height: 800px;
-    width: 100%;
+    /*width: 100%;*/
     
 }
 
@@ -211,14 +212,7 @@ h1 {
     width: 45px;
 }
 
-#cards {
 
-/*     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 60px;
-    margin: 40px; */
-}
 
 .article p,
 h2 {
@@ -227,13 +221,15 @@ h2 {
 
 .article h2 {
     text-align: center;
+    padding: 0 200px;
 }
 
 .article p {
     text-align: justify;
+    padding: 0 200px;
 }
 
-/*--- contacts ---*/
+/*--- form and contacts ---*/
 
 #contacts {
     
@@ -241,7 +237,7 @@ h2 {
 }
 
 form {
-    background-color: var(--strong-primary-color);
+    background-color: var(--light-primary-color);
     display: flex;
     flex-direction: column;
     padding: 60px 30% 60px;
@@ -283,38 +279,78 @@ textarea {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    padding: 20px;
+}
+.footer-bottom p {
+    margin-right: 50px;;
 }
 
 .footer-icon {
     margin: auto 20px;
+    height: 50px;
     text-align: start;
 }
 
 
 
 @media screen and (max-width: 800px) {
-    .upfooter{
+    body {
+        margin: 2%;
+    }
+    
+    .upfooter {
         display: none;
     }
 
-    
+    .hero {
+        height: 80dvh;
+        background-position: right;
+    }
+    .hero h1 {
+        margin-top: 50%;
+        padding-bottom: 0%;
+        font-size: 50px;
+    }
+    .hero h2 {
+        padding: 5%;
+        font-size: 25px;
+        
+    }
+    .section {
+        padding: 10%;
+    }
 
     #cards {
         display: flex;
         flex-direction: column;
+        
     }
+
+    .article p {
+        padding: 1%;
+    }
+    .contact-me {
+        padding: 10%;
+    }
+
+
 
     .footer-bottom {
         display: flex;
         flex-direction: column;
+    
+        
     }
 
+    
     .footer-bottom img {
         margin-top: 15px;
     }
 
     .footer-bottom p {
-        margin-bottom: 20px;
+        margin: 20px;
+        
+        font-size: 20px;
     }
     
 
