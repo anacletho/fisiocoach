@@ -2,11 +2,15 @@
     font-family: 'Lora', serif;
     margin: 0;
     padding: 0;
-    list-style: none;
+
+    /*list-style: none;*/
+}
+* p {
+    line-height: 150%;
 }
 
 :root {
-    --light-primary-color: #568acf;
+    --light-primary-color: #0378A6;
     --strong-primary-color: #039;
     --light-secondary-color: #f1f1f1;
     --strong-secondary-color: #705b48;
@@ -32,6 +36,7 @@ a:visited {
     color: white;
     height: 65px;
     gap: 20px;
+    list-style: none;
 }
 
 .contact-icon {
@@ -48,6 +53,7 @@ a:visited {
     align-items: center;
     flex-direction: row;
     height: 75px;
+    
 }
 
 .nav-div {
@@ -64,6 +70,7 @@ a:visited {
     align-items: center;
     flex-direction: row;
     gap: 50px;
+    list-style: none;
 }
 
 #trattamenti,
@@ -171,6 +178,8 @@ h1 {
     align-items: center;
     background-color: var(--light-primary-color);
     box-shadow: 0px 5px 5px var(--shadow-color);
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
 }
 
 /*--- sections ---*/
@@ -180,6 +189,7 @@ h1 {
     text-align: justify;
     padding: 5% 25%;
     color: var(--strong-primary-color);
+    
     
 }
 
@@ -191,11 +201,27 @@ h1 {
     
 }
 
+
+#whyMe ul li{
+    margin: 25px;
+    
+}
+
 /*--- cards ---*/
 
-.article {
-
+#cards {
+    padding: 8% 0;
     background-color: var(--light-primary-color);
+    /*border-top-left-radius: 50% 5%;
+    border-top-right-radius: 50% 5%;
+    border-bottom-left-radius: 50% 5%;
+    border-bottom-right-radius: 50% 5%;*/
+    
+}
+
+.article {
+    
+    /*background-color: var(--light-primary-color);*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -203,7 +229,7 @@ h1 {
     padding: 25px 25px;
     color: white;
     font-size: 1.2rem;
-    box-shadow: 5px 5px 5px var(--shadow-color);
+    /*box-shadow: 5px 5px 5px var(--shadow-color);*/
     gap: 20px;
     height: max-content;
 }
